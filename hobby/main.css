@@ -1,0 +1,18 @@
+:root {
+    --main-dark-color: #191923;
+    --white-color: #fff;
+    --blues-color: #1F84DE;
+    --pink-color: #E027E5;
+    --orange-color: #EB8932;
+    --violet-color: #9400D3;
+    --purple-color: #800080;
+    --light-orange-color: #ff9f3f;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Geo');
+
+html, body, ul, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geo', sans-serif;
+}

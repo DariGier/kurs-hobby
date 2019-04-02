@@ -1,0 +1,61 @@
+:root {
+    --main-dark-color: #191923;
+    --white-color: #fff;
+    --blues-color: #1F84DE;
+    --pink-color: #E027E5;
+    --orange-color: #EB8932;
+    --violet-color: #9400D3;
+    --purple-color: #800080;
+    --light-orange-color: #ff9f3f;
+}
+
+.contact {
+    background-image: url("https://www.unicef.pl/media/images/540x350xGwiazdka,P20dla,P20Dzieci,P20Afryki.png.pagespeed.ic.6Ev7uWHBIh.jpg");
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card-contact {
+    background-color: gray;
+    padding: 11em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.list-contact {
+    background-color: grey;
+    height: 5vh;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 64px;
+ 
+}
+
+.list--contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    align-self: auto;
+    
+
+}
+h3 {
+    font-size: 2em; 
+    color: var(--light-orange-color);
+}
+
+button {
+    text-align: center;
+    color: darkorchid;
+}

@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wild Africa</title>
+    <link rel="shortcut icon" type="image/png" href="https://www.imperiumtapet.com/public/uploads/preview/lwy-3115330368303p9vwod5nu.jpg">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="place.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="smoke.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    </head>
+<body>
+  
+    
+    <nav class="navigation"> 
+    <img class="logo" src="https://www.tapeciarnia.pl/tapety/normalne/tapeta-lew-na-tle-ciemnych-chmur-z-tecza.jpg" alt="logo">
+    <ul class="navigation--links">
+    
+        <li class="link-wrapper"><a href="/#home">Informacje ogólne</a></li>
+        <li class="link-wrapper">Zakątki Afryki</li>
+        <li class="link-wrapper"><a href="/vhs_store.html">Organizacje</a></li>
+        <li class="link-wrapper"><a href="/library.html">Pomagajmy</a></li>
+        <li class="link-wrapper"><a href="/contact.html">Kontakt</a></li>
+    </ul>
+<!-- this is MENU TOGGLE-->
+<div class="menu">
+    <input type="checkbox" name="menu-toggle" class="menu-toggle">
+
+    <span class="menu--hamburger-bar"></span>
+    <span class="menu--hamburger-bar"></span>
+    <span class="menu--hamburger-bar"></span>
+
+    <ul class="navigation--hidden-menu"> 
+        <li class="navigation--link"><a href="/#home">Informacje ogólne</a></li>
+        <li class="navigation--link">Zakątki Afryki</li>
+        <li class="navigation--link"><a href="/vhs_store.html">Organizacje</a></li>
+        <li class="navigation--link"><a href="/library.html">Pomagajmy</a></li>
+        <li class="navigation--link"><a href="/contact.html">Kontakt</a></li>
+    </ul>
+   
+</div>
+
+    </nav>
+
+
+
+    <section class="smoke">
+         
+        <div class="smoke--wrapper">
+                <video src="smoke.mp4" autoplay muted></video>
+            <h6 class="smoke--wrapper-text">
+                <span>A</span>
+                <span>F</span>
+                <span>R</span>
+                <span>Y</span>
+                <span>K</span>
+                <span>A</span>
+            </h6>
+
+        </div>
+
+    </section>
+
+    <section class="place">
+        <div class="main--place">
+        <h2 class="main--place">Przyjrzyj się pięknu Afryki na zdjęciach</h2>
+    </div>
+    </section>
+
+
+
+    <section class = "gallery">
+    <div class = "gallery--container">
+        <div class = "slide--show-container">
+            <div id = "playPauseButton"></div>
+            <div class = "left--arrow"><span class = "icon--left-arrow"></span></div>
+            <div class = "right--arrow" onclick="plusSlides(1)"><span class = "icon--right-arrow"></span></div>
+            <div class = "caption--holder" onclick ="plusSlides(-1)"><p class = "caption--text"></p></div>
+            <div class = "image--holder">
+                    <img class = "slide" src = "https://www.tapeciarnia.pl/tapety/normalne/73317_zebry_sawanna.jpg">
+                    <p class = "caption--text">I tulącym się do siebie zeberkom</p>
+            </div>     
+        </div>
+    </div>
+    <div class = "gallery--container">
+            <div class = "slide--show-container">
+                <div class = "image--holder">
+                        <img class = "slide" src = "https://www.tapetus.pl/obrazki/n/83432_yrafy--sawanna.jpg">
+                        <p class = "caption--text">Caption text 02</p>
+                </div>     
+            </div>
+    </div>
+    <div class = "gallery--container">
+            <div class = "slide--show-container">
+                <div class = "image--holder">
+                        <img class = "slide" src = "https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_960_720.jpg">
+                        <p class = "caption--text">Caption text 03</p>
+                </div>     
+            </div>
+            <div id = "dotsContainer"></div>
+    </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <ul class="icon--list">
+                <li>
+                        <span class="icon--wrapper blue">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                    </li>
+        <li>
+            <span class="icon--wrapper">
+                <i class="fab fa-twitter"></i>
+            </span>
+        </li>
+        <li>
+                <span class="icon--wrapper violet">
+                    <i class="fab fa-twitch"></i>
+                </span>
+            </li>
+            <li>
+            <span class="icon--wrapper yellow">
+                <i class="fab fa-snapchat"></i>
+            </span>
+        </li>
+    </ul>
+    </footer>
+    <script type="module" src="gallery.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

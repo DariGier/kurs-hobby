@@ -1,0 +1,43 @@
+:root {
+    --main-dark-color: #191923;
+    --white-color: #fff;
+    --blues-color: #1F84DE;
+    --pink-color: #E027E5;
+    --orange-color: #EB8932;
+    --violet-color: #9400D3;
+    --purple-color: #800080;
+    --light-orange-color: #ff9f3f;
+}
+
+.hero {
+    background-image: url("https://www.tapetus.pl/obrazki/n/96439_afryka-zachod-slonie-slonca.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.hero--wrapper {
+    border: 5px solid var(--light-orange-color);
+    text-transform: inherit;
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 8px;
+    margin: 8px;
+    max-width: 700px;
+    display: flex;
+    align-items: flex-start;
+   
+}
+
+h1 {
+    color: var(--main-dark-color);
+
+}
+
+.hero--content {
+  
+ 
+}

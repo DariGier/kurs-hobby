@@ -1,0 +1,222 @@
+.gallery--container {
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    user-select: none;
+    box-shadow: 0px 0px 3px 1px #0000078;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+.slide--show-container{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: #808080;
+    position: relative;
+
+
+}
+
+
+.slide {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+
+
+}
+
+.image--holder {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   // opacity: 0;
+
+}
+
+.image--holder img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+.caption--text {
+    display: none;
+}
+
+.left--arrow, .right--arrow {
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+
+
+}
+
+.right--arrow {
+
+    left: auto;
+    right: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.left--arrow:hover, .right--arrow:hover {
+    background: #000000a8;
+    cursor: pointer;
+
+}
+
+.icon--right-arrow, .icon--left-arrow {
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right:0;
+    top: 0;
+    bottom: 0;
+
+
+}
+
+
+.icon--right-arrow {
+    transform: rotateZ(45deg);
+
+}
+
+
+.icon--left-arrow {
+    transform: rotateZ(-135deg);
+
+}
+
+.caption--holder {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    columns: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+
+
+}
+
+.caption--text {
+    margin: 0;
+
+}
+
+#playPauseButton {
+
+width: 32px;
+height: 32px;
+position: absolute;
+z-index: 5;
+margin: 5px;
+cursor: pointer;
+background-image: url("http://icons.iconarchive.com/icons/icons-land/play-stop-pause/256/Play-Pressed-icon.png");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+#dotsContainer {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.dots {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+
+}
+
+.dots:hover, .dots.active {
+    background-color: #717171;
+
+}
+
+.dots:first-child {
+    margin-left: 0;
+}
+
+.move--left-current-slide {
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+.move--left-next-slide {
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes moveLeftCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+    to {
+        margin-left: -100%;
+        opacity: 1;
+    }
+
+}
+
+@keyframes moveLeftNext {
+    from {
+        margin-left: 100;
+        opacity: 1;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+
+}

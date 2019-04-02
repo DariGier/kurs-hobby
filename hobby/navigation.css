@@ -1,0 +1,97 @@
+:root {
+    --main-dark-color: #191923;
+    --white-color: #fff;
+    --blue-color: #1F84DE;
+    --pink-color: #E027E5;
+    --orange-color: #EB8932;
+    --violet-color: #9400D3;
+    --purple-color: #800080;
+}
+
+.navigation {
+color: var(--purple-color);
+background-color: var(--main-dark-color);
+background: linear-gradient(90deg, var(--blue-color) 0%, var(--orange-color) 50%, var(--blue-color) 100%);
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.navigation--links {
+    display: flex;
+    list-style: none;
+}
+
+.logo {
+    height: 64px;
+    max-width: 100%;
+}
+
+.link-wrapper {
+  padding: 0 16px;
+  font-size: 18px;
+}
+
+.menu {
+    display: none;
+    position: relative;
+    z-index: 1;
+    margin-right: 16px;
+
+}
+
+.menu-toggle {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.menu--hamburger-bar {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #E027E5;
+    z-index: 1;
+}
+
+.navigation--hidden-menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px -50px 0 0;
+    padding: 50px;
+    background: #1F84DE;
+    list-style: none;
+    left: 0px;
+    top: 162px;
+    transform: translate(0%, 0);
+    transition: transform 2s cubic-bezier(0.23, 1, 0.320, 1);
+
+
+}
+
+.menu input:checked ~ .navigation--hidden-menu {
+    transform: translate(-100%, 0);
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu{
+    display: block;
+
+}
+
+.navigation--links {
+    display: none;
+}
+
+.navigation {
+    justify-content: space-between;
+}

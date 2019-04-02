@@ -1,0 +1,20 @@
+:root {
+    --main-dark-color: #191923;
+}
+
+
+
+
+.main--place  {
+    color: bisque;
+    font-size: 1.1em;
+    background-color: var(--main-dark-color);
+    padding: 2em;
+    display: flex;
+    align-self: auto;
+    justify-content: center;
+   
+
+}
+
+
